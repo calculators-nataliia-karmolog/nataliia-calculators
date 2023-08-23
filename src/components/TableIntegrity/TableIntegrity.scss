@@ -1,0 +1,292 @@
+$violet-light: #FFDFFF;
+$violet-dark: #DCB8FF;
+$blue-dark: #1F75FF;
+$blue-light: #BFF5FF;
+$green: #75ecaa;
+$yellow: #F5F8A7;
+$orange: #FCDCAA;
+$red-light: #FFB6B6;
+$red-dark: #ef5e4d;
+
+.table_container {
+  padding: 15px;
+
+
+  h3 {
+    font-family: 'Playfair Display', serif;
+    color: #263E80;
+  }
+}
+.table-integrity {
+  p {
+    width: 100%;
+    margin-top: 10px;
+    font-style: italic;
+    //font-family: 'Roboto', sans-serif;
+  }
+  table {
+    border-collapse: collapse;
+    font-size: 17px;
+    letter-spacing: 0px;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+
+  tr {
+    width: 100%;
+  }
+
+
+  th, td {
+    border: 1px solid rgba(0, 0, 0, 0);
+    height: 70px;
+    text-align: center;
+    letter-spacing: 0px;
+    font-family: 'Playfair Display', serif;
+    color: #263E80;
+  }
+
+  .th_table {
+    font-weight: normal;
+    font-size: 17px;
+  }
+
+  td span {
+    color: #263E80;
+    font-family: 'Playfair Display', serif;
+  }
+
+  .th_header,
+  .th_footer {
+    background: #C6C8D4;
+    font-weight: normal;
+    font-size: 17px;
+
+    .td_number {
+      background: #C6C8D4;
+    }
+  }
+
+  .th_footer {
+    font-weight: normal;
+  }
+
+
+  .th_small {
+    width: 95px;
+    color: #263E80;
+  }
+
+  .th_large {
+    width: 180px;
+    text-align: start;
+  }
+
+  .th_xs {
+    width: 32px;
+    font-size: 40px;
+  }
+
+  .ch-name {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: start;
+    padding-left: 10px;
+    position: relative;
+    color: #263E80;
+
+    .tooltip {
+
+    }
+
+    .info-wrapper {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      text-align: start;
+      padding-left: 10px;
+      position: relative;
+
+      span {
+        color: #263E80;
+      }
+    }
+  }
+
+
+  .td_number {
+    span {
+      font-size: 17px;
+      color: #ffffff;
+    }
+  }
+
+  .ch-info {
+    font-size: 11px;
+  }
+
+  .tr_nine, .tr_earth {
+    background: $violet-light;
+
+    .td_number {
+      background: $violet-light;
+
+    }
+    .info-wrapper {
+
+    }
+  }
+
+  .tr_seven {
+    background: $violet-dark;
+    color: white;
+
+    .td_number {
+      background: $violet-dark;
+    }
+  }
+
+  .tr_six {
+    background: $blue-dark;
+    color: white;
+    td {
+      span {
+        color: white;
+      }
+    }
+
+    .td_number {
+      background: $blue-dark;
+    }
+    .info-wrapper {
+      span {
+        color: white;
+      }
+    }
+  }
+
+  .tr_five {
+    background: $blue-light;
+
+    .td_number {
+      background: $blue-light;
+    }
+  }
+
+  .tr_eight {
+    background: $green;
+
+    .td_number {
+      background: $green;
+    }
+  }
+
+  .tr_three {
+    background: $yellow;
+
+    td {
+      color: #263E80;
+    }
+
+    .td_number {
+      background: $yellow;
+      span {
+        color: #263E80;
+      }
+    }
+    .info-wrapper {
+      span {
+        color: #263E80;
+      }
+    }
+
+  }
+
+  .tr_two {
+    background: $orange;
+
+    .td_number {
+      background: $orange;
+    }
+  }
+
+  .tr_one {
+    background: $red-light;
+
+    .td_number {
+      background: $red-light;
+    }
+  }
+  .tr_earth {
+    background: $red-dark;
+    color: white;
+    td {
+      span {
+        color: white;
+      }
+    }
+
+    .td_number {
+      background: $red-dark;
+
+    }
+    .info-wrapper {
+      span {
+        color: white;
+      }
+    }
+  }
+
+  .tr_sum {
+    background: #C6C8D4;
+    color: #640e7d;
+
+    .td_number {
+      background: #C6C8D4;
+    }
+  }
+
+  .td_sum {
+    text-align: center;
+    color: #263E80;
+  }
+
+  #td_sum1, #td_sum2, #td_sum3 {
+    color: #263E80;
+  }
+
+
+  @media screen and (max-width: 800px) {
+
+    .th_table {
+      font-size: 15px;
+    }
+
+    .ch-name {
+      font-size: 15px;
+
+      .tooltip {
+
+      }
+    }
+
+    .th_small {
+      width: 50px;
+      padding: 0 8px;
+    }
+    .th_large {
+      width: 130px;
+      padding: 0 8px;
+    }
+    .th_xs {
+      width: 45px;
+      padding: 0 10px;
+    }
+    .ch-info {
+      font-size: 6px;
+    }
+
+  }
+}
